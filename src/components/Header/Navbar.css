@@ -1,0 +1,81 @@
+/* Navbar.css */
+.custom-header {
+  height: 65px;
+  background-color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -1;
+}
+
+.logo a {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  color: var(--PrimaryColor);
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin-top:10px ;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: var(--PrimaryColor);
+  font-weight: 500;
+}
+
+.login-button {
+  background-color: var(--PrimaryColor);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-right: 30px;
+  cursor:pointer;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .custom-header {
+    height: 100px;
+    flex-direction:row;
+    align-items: center;
+  }
+
+  .logo-text {
+    margin-left: 0; /* Reset the margin for smaller screens */
+    margin-top: 10px; /* Add margin-top for spacing */
+  }
+
+  .nav-menu {
+    margin-top: 20px;
+    gap: 10px; /* Reduce the gap between menu items */
+  }
+
+  .login-button {
+    margin-top: 10px; /* Add margin-top for spacing */
+  }
+
+  .navbar {
+    position: relative; /* Reset the position for smaller screens */
+    z-index: 1; /* Ensure navbar appears above content */
+  }
+}

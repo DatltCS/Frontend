@@ -1,0 +1,58 @@
+/* custom-styles.css */
+
+/* Style the Dropdown container to look like an input */
+.custom-dropdown-container {
+  position:relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+/* Style the Dropdown toggle to look like the input field */
+.custom-dropdown-toggle {
+  display: absolute;
+  width: 200px;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Style the Dropdown menu */
+.custom-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: flex; /* Display the items horizontally */
+  flex-direction: column; /* Align the items in a row */
+  border: none;
+}
+
+/* Style individual items in the Dropdown menu */
+.custom-dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+/* Highlight item on hover */
+.custom-dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.start-place{
+  font-size: 10px;
+}
